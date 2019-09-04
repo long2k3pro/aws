@@ -1,0 +1,19 @@
+# Rename this file to .htaccess if you want to allow large file uploads
+# Note that this file is not always taken into account, depending on your server configuration
+ErrorDocument 500 "500. Internal Server Error"
+ErrorDocument 404 "404. Not Found"
+ErrorDocument 400 "400. Bad Request"
+ErrorDocument 401 "401. Unauthorized"
+ErrorDocument 403 "403. Forbidden"
+php_value max_execution_time 1200
+php_value memory_limit 32M
+php_value post_max_size 200M
+php_value upload_max_filesize 200M
+AuthType Basic
+AuthName "Restricted Content"
+AuthUserFile /etc/apache2/.htpasswd
+Require valid-user
+
+# HTID:5973382: DO NOT REMOVE OR MODIFY THIS LINE AND THE LINES BELOW
+php_value display_errors 0
+# DO NOT REMOVE OR MODIFY THIS LINE AND THE LINES ABOVE HTID:5973382:
