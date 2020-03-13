@@ -9,10 +9,10 @@ php_value max_execution_time 1200
 php_value memory_limit 32M
 php_value post_max_size 200M
 php_value upload_max_filesize 200M
-AuthType Basic
-AuthName "Restricted Content"
-AuthUserFile /etc/apache2/.htpasswd
-Require valid-user
+#AuthType Basic
+#AuthName "Restricted Content"
+#AuthUserFile /etc/apache2/.htpasswd
+#Require valid-user
 
 # HTID:5973382: DO NOT REMOVE OR MODIFY THIS LINE AND THE LINES BELOW
 php_value display_errors 0
